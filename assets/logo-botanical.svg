@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <!-- Gradients for realistic cherry blossom -->
+    <radialGradient id="petalGradient">
+      <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:1" />
+      <stop offset="60%" style="stop-color:#F2B5C4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E896AB;stop-opacity:1" />
+    </radialGradient>
+    
+    <radialGradient id="centerGradient">
+      <stop offset="0%" style="stop-color:#FFD700;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D4A574;stop-opacity:1" />
+    </radialGradient>
+    
+    <linearGradient id="stamenGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFE4B5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D4A574;stop-opacity:1" />
+    </linearGradient>
+    
+    <radialGradient id="pistilGradient">
+      <stop offset="0%" style="stop-color:#8FBC8F;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4A6741;stop-opacity:1" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Center point (transformation origin) -->
+  <g transform="translate(50, 50)">
+    
+    <!-- がく (Calyx) - 5 sepals supporting the flower -->
+    <g opacity="0.6">
+      <ellipse cx="0" cy="-32" rx="5" ry="8" fill="#6B8B62" transform="rotate(0)"/>
+      <ellipse cx="30" cy="-10" rx="5" ry="8" fill="#6B8B62" transform="rotate(72)"/>
+      <ellipse cx="19" cy="26" rx="5" ry="8" fill="#6B8B62" transform="rotate(144)"/>
+      <ellipse cx="-19" cy="26" rx="5" ry="8" fill="#6B8B62" transform="rotate(216)"/>
+      <ellipse cx="-30" cy="-10" rx="5" ry="8" fill="#6B8B62" transform="rotate(288)"/>
+    </g>
+    
+    <!-- 花びら (Petals) - 5 petals in radial pattern -->
+    <!-- Petal 1 (top) -->
+    <g transform="rotate(0)">
+      <path d="M 0,-15 Q -8,-28 0,-35 Q 8,-28 0,-15 Z" 
+            fill="url(#petalGradient)" 
+            stroke="#E896AB" 
+            stroke-width="0.3"/>
+      <!-- Petal vein detail -->
+      <path d="M 0,-15 L 0,-30" stroke="#E896AB" stroke-width="0.2" opacity="0.4"/>
+    </g>
+    
+    <!-- Petal 2 (right upper) -->
+    <g transform="rotate(72)">
+      <path d="M 0,-15 Q -8,-28 0,-35 Q 8,-28 0,-15 Z" 
+            fill="url(#petalGradient)" 
+            stroke="#E896AB" 
+            stroke-width="0.3"/>
+      <path d="M 0,-15 L 0,-30" stroke="#E896AB" stroke-width="0.2" opacity="0.4"/>
+    </g>
+    
+    <!-- Petal 3 (right lower) -->
+    <g transform="rotate(144)">
+      <path d="M 0,-15 Q -8,-28 0,-35 Q 8,-28 0,-15 Z" 
+            fill="url(#petalGradient)" 
+            stroke="#E896AB" 
+            stroke-width="0.3"/>
+      <path d="M 0,-15 L 0,-30" stroke="#E896AB" stroke-width="0.2" opacity="0.4"/>
+    </g>
+    
+    <!-- Petal 4 (left lower) -->
+    <g transform="rotate(216)">
+      <path d="M 0,-15 Q -8,-28 0,-35 Q 8,-28 0,-15 Z" 
+            fill="url(#petalGradient)" 
+            stroke="#E896AB" 
+            stroke-width="0.3"/>
+      <path d="M 0,-15 L 0,-30" stroke="#E896AB" stroke-width="0.2" opacity="0.4"/>
+    </g>
+    
+    <!-- Petal 5 (left upper) -->
+    <g transform="rotate(288)">
+      <path d="M 0,-15 Q -8,-28 0,-35 Q 8,-28 0,-15 Z" 
+            fill="url(#petalGradient)" 
+            stroke="#E896AB" 
+            stroke-width="0.3"/>
+      <path d="M 0,-15 L 0,-30" stroke="#E896AB" stroke-width="0.2" opacity="0.4"/>
+    </g>
+    
+    <!-- おしべ (Stamens) - surrounding the pistil -->
+    <!-- Ring of stamens (simplified to 10 representative ones) -->
+    <g opacity="0.9">
+      <circle cx="0" cy="-8" r="1.5" fill="url(#stamenGradient)"/>
+      <circle cx="6" cy="-5" r="1.5" fill="url(#stamenGradient)"/>
+      <circle cx="8" cy="0" r="1.5" fill="url(#stamenGradient)"/>
+      <circle cx="6" cy="5" r="1.5" fill="url(#stamenGradient)"/>
+      <circle cx="0" cy="8" r="1.5" fill="url(#stamenGradient)"/>
+      <circle cx="-6" cy="5" r="1.5" fill="url(#stamenGradient)"/>
+      <circle cx="-8" cy="0" r="1.5" fill="url(#stamenGradient)"/>
+      <circle cx="-6" cy="-5" r="1.5" fill="url(#stamenGradient)"/>
+      <circle cx="-3" cy="-7" r="1.2" fill="url(#stamenGradient)"/>
+      <circle cx="3" cy="-7" r="1.2" fill="url(#stamenGradient)"/>
+    </g>
+    
+    <!-- めしべ (Pistil) - THE CENTER, THE CONNECTION POINT -->
+    <!-- This is where pollination happens - the most important "connection" -->
+    <g>
+      <!-- 子房 (Ovary) - will become fruit -->
+      <ellipse cx="0" cy="2" rx="3" ry="4" fill="url(#pistilGradient)"/>
+      
+      <!-- 花柱 (Style) - connecting ovary to stigma -->
+      <rect x="-0.8" y="-4" width="1.6" height="6" fill="#6B8B62" rx="0.8"/>
+      
+      <!-- 柱頭 (Stigma) - where pollen lands = CONNECTION MOMENT -->
+      <circle cx="0" cy="-4" r="2.2" fill="#8FBC8F"/>
+      <circle cx="0" cy="-4" r="1.5" fill="#4A6741"/>
+      
+      <!-- Highlight on stigma - representing the "connection" -->
+      <circle cx="-0.5" cy="-4.5" r="0.8" fill="#FADCE5" opacity="0.7"/>
+    </g>
+    
+    <!-- Subtle "pollen" particle approaching stigma (representing connection) -->
+    <g opacity="0.8">
+      <circle cx="-4" cy="-6" r="0.8" fill="#FFD700">
+        <animate attributeName="cx" values="-4;-1;0" dur="2s" repeatCount="indefinite"/>
+        <animate attributeName="cy" values="-6;-5;-4" dur="2s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.8;1;0" dur="2s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+    
+  </g>
+  
+  <!-- Subtle connection lines (representing the structural relationship) -->
+  <g opacity="0.15" stroke="#4A6741" stroke-width="0.5" fill="none">
+    <circle cx="50" cy="50" r="12"/>
+    <circle cx="50" cy="50" r="20"/>
+    <circle cx="50" cy="50" r="35"/>
+  </g>
+</svg>

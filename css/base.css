@@ -250,29 +250,6 @@ small {
 }
 
 /* =========================================
-   SKIP LINK (Accessibility)
-   ======================================== */
-
-.skip-link {
-  position: absolute;
-  top: -40px;
-  left: 0;
-  background: var(--color-matcha);
-  color: var(--color-white);
-  padding: var(--space-2) var(--space-4);
-  text-decoration: none;
-  font-weight: var(--font-semibold);
-  z-index: 9999;
-  transition: top var(--transition-fast);
-}
-
-.skip-link:focus {
-  top: 0;
-  outline: 2px solid var(--color-sakura);
-  outline-offset: 2px;
-}
-
-/* =========================================
    FOCUS STATES
    ======================================== */
 

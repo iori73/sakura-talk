@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <!-- Sakura gradient -->
+    <linearGradient id="sakuraMain" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F2B5C4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E896AB;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Matcha gradient -->
+    <linearGradient id="matchaMain" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6B8B62;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4A6741;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Radial gradient for center -->
+    <radialGradient id="centerGlow">
+      <stop offset="0%" style="stop-color:#4A6741;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3A5234;stop-opacity:1" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Left person (sakura) - representing the guest -->
+  <g transform="translate(50, 50)">
+    <!-- Outer petal -->
+    <path d="M -22,-15 C -28,-28 -20,-35 -8,-33 C 0,-32 3,-24 0,-16 C -3,-8 -15,-7 -22,-15 Z" 
+          fill="url(#sakuraMain)" 
+          stroke="#E896AB" 
+          stroke-width="0.5"
+          opacity="0.95"/>
+    
+    <!-- Inner detail -->
+    <ellipse cx="-12" cy="-20" rx="4" ry="6" fill="#FADCE5" opacity="0.6"/>
+  </g>
+  
+  <!-- Right person (matcha) - representing the guide -->
+  <g transform="translate(50, 50)">
+    <!-- Outer petal -->
+    <path d="M 22,-15 C 28,-28 20,-35 8,-33 C 0,-32 -3,-24 0,-16 C 3,-8 15,-7 22,-15 Z" 
+          fill="url(#matchaMain)" 
+          stroke="#4A6741" 
+          stroke-width="0.5"
+          opacity="0.95"/>
+    
+    <!-- Inner detail -->
+    <ellipse cx="12" cy="-20" rx="4" ry="6" fill="#6B8B62" opacity="0.4"/>
+  </g>
+  
+  <!-- Connection point (bridge) -->
+  <g transform="translate(50, 50)">
+    <circle cx="0" cy="-16" r="3.5" fill="url(#centerGlow)"/>
+    <circle cx="0" cy="-16" r="2" fill="#FADCE5" opacity="0.8"/>
+  </g>
+  
+  <!-- Shared blossom (representing connection and shared experience) -->
+  <g transform="translate(50, 50)">
+    <!-- Five petals forming sakura -->
+    <circle cx="0" cy="5" r="5.5" fill="#F2B5C4"/>
+    <circle cx="-10" cy="-2" r="5.5" fill="#F2B5C4" opacity="0.9"/>
+    <circle cx="10" cy="-2" r="5.5" fill="#F2B5C4" opacity="0.9"/>
+    <circle cx="-6" cy="12" r="5.5" fill="#F2B5C4" opacity="0.85"/>
+    <circle cx="6" cy="12" r="5.5" fill="#F2B5C4" opacity="0.85"/>
+    
+    <!-- Center of blossom -->
+    <circle cx="0" cy="5" r="3.5" fill="url(#centerGlow)"/>
+    <circle cx="0" cy="5" r="2" fill="#D4A574" opacity="0.8"/>
+  </g>
+  
+  <!-- Subtle text path for "talk" -->
+  <g transform="translate(50, 50)">
+    <path d="M -8,20 Q 0,22 8,20" fill="none" stroke="#4A6741" stroke-width="0.8" opacity="0.4"/>
+  </g>
+</svg>
