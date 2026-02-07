@@ -1,0 +1,664 @@
+/* =========================================
+   SAKURA TALK - Responsive Styles
+   Instagram-Inspired Version
+   Breakpoints: 1024px, 768px, 480px
+   ======================================== */
+
+/* =========================================
+   EXTRA SMALL SCREENS (max-width: 360px)
+   ======================================== */
+
+@media (max-width: 360px) {
+  /* Hero */
+  .hero-title {
+    font-size: 2rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 0.9375rem;
+  }
+  
+  .hero-label {
+    font-size: 0.6875rem;
+  }
+  
+  /* Buttons - prevent text overflow */
+  .btn {
+    font-size: 0.875rem;
+    padding: var(--space-3) var(--space-5);
+  }
+  
+  .btn-lg {
+    font-size: 0.9375rem;
+    padding: var(--space-4) var(--space-6);
+  }
+  
+  /* Case Cards */
+  .case-card-title {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  
+  .case-card-text {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  
+  /* Trust Stats */
+  .trust-stat-number {
+    font-size: 2rem;
+  }
+  
+  /* Section Titles */
+  .section-title {
+    font-size: 1.75rem;
+  }
+}
+
+/* =========================================
+   LARGE SCREENS (min-width: 1400px)
+   ======================================== */
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+  
+  .hero-title {
+    font-size: 4.5rem;
+  }
+  
+  /* Larger polaroids on big screens (V4: left stays smaller) */
+  .hero-polaroid img {
+    width: 240px;
+    height: 300px;
+  }
+  
+  .hero-image-left .hero-polaroid img {
+    width: 180px;
+    height: 234px;
+  }
+  
+  .hero-image-right .hero-polaroid img {
+    width: 200px;
+    height: 250px;
+  }
+}
+
+/* =========================================
+   MEDIUM DESKTOP (max-width: 1200px)
+   Safer positioning for hero polaroids
+   ======================================== */
+
+@media (max-width: 1200px) and (min-width: 769px) {
+  .hero-polaroid img {
+    width: 140px;
+    height: 182px;
+  }
+  
+  .hero-image-left .hero-polaroid img {
+    width: 120px;
+    height: 156px;
+  }
+  
+  .hero-image-right .hero-polaroid img {
+    width: 120px;
+    height: 150px;
+  }
+  
+  .hero-image-left {
+    left: 1%;
+  }
+  
+  .hero-image-right {
+    right: 1%;
+  }
+}
+
+/* =========================================
+   TABLET LANDSCAPE (max-width: 1024px)
+   ======================================== */
+
+@media (max-width: 1024px) {
+  .grid-cols-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-8);
+  }
+  
+  .footer-brand {
+    grid-column: span 2;
+  }
+  
+  /* Smaller polaroids on tablet (V4: left smaller) */
+  .hero-polaroid img {
+    width: 160px;
+    height: 200px;
+  }
+  
+  .hero-image-left .hero-polaroid img {
+    width: 140px;
+    height: 182px;
+  }
+  
+  .hero-image-right .hero-polaroid img {
+    width: 120px;
+    height: 150px;
+  }
+  
+  /* V4: Topics section padding */
+  .topics-section {
+    padding-top: 24px;
+    padding-bottom: 60px;
+  }
+  
+  .hero-image-left {
+    left: 2%;
+  }
+  
+  .hero-image-right {
+    right: 2%;
+  }
+  
+  /* Trust Stats */
+  .trust-stats {
+    gap: var(--space-8);
+  }
+  
+  .trust-stat-number {
+    font-size: var(--text-4xl);
+  }
+}
+
+/* =========================================
+   TABLET (max-width: 768px)
+   ======================================== */
+
+@media (max-width: 768px) {
+  /* Navigation */
+  .nav {
+    display: none;
+  }
+  
+  .menu-btn {
+    display: flex;
+  }
+  
+  /* Hero */
+  .hero {
+    min-height: auto;
+    padding: calc(var(--header-height) + var(--space-16)) 0 var(--space-16);
+  }
+  
+  .hero-title {
+    font-size: var(--text-4xl);
+  }
+  
+  .hero-title-line {
+    white-space: normal;
+  }
+  
+  .hero-subtitle {
+    font-size: var(--text-lg);
+  }
+  
+  /* Hide polaroids on tablet */
+  .hero-image-container {
+    display: none;
+  }
+  
+  /* V4: Topics / Stories section padding */
+  .topics-section {
+    padding-top: 24px;
+    padding-bottom: 48px;
+  }
+  
+  .stories-section {
+    padding-bottom: 48px;
+  }
+  
+  .profile-map-illustration {
+    max-width: 280px;
+    margin: var(--space-6) auto;
+  }
+  
+  .profile-map-inset {
+    width: 60px;
+    height: 60px;
+    right: 8%;
+    bottom: 26%;
+  }
+  
+  .profile-map-inset i,
+  .profile-map-inset svg {
+    width: 28px;
+    height: 28px;
+  }
+  
+  /* Grid */
+  .grid-cols-2,
+  .grid-cols-3 {
+    grid-template-columns: 1fr;
+  }
+  
+  /* Trust Stats */
+  .trust-stats {
+    flex-direction: column;
+    gap: var(--space-6);
+    align-items: center;
+  }
+  
+  .trust-stat {
+    display: flex;
+    align-items: center;
+    gap: var(--space-4);
+    text-align: left;
+  }
+  
+  .trust-stat-number {
+    font-size: var(--text-4xl);
+    min-width: 80px;
+  }
+  
+  .trust-stat-label br {
+    display: none;
+  }
+  
+  /* How It Works */
+  .how-it-works {
+    padding: var(--space-6);
+  }
+  
+  .how-it-works-steps {
+    flex-direction: column;
+    gap: var(--space-6);
+  }
+  
+  .how-it-works-step {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    text-align: left;
+  }
+  
+  .step-number {
+    position: static;
+    transform: none;
+    margin-top: var(--space-2);
+  }
+  
+  .step-icon {
+    margin: 0;
+    width: 56px;
+    height: 56px;
+    flex-shrink: 0;
+  }
+  
+  .step-icon svg,
+  .step-icon i {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .step-connector {
+    display: none;
+  }
+  
+  /* Value Props */
+  .value-props {
+    grid-template-columns: 1fr;
+  }
+  
+  /* Two Column Layout */
+  .two-col,
+  .two-col-reverse,
+  .two-col-wide-left,
+  .two-col-wide-right {
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+  }
+  
+  .two-col-reverse > *:first-child,
+  .two-col-reverse > *:last-child {
+    order: unset;
+  }
+  
+  /* Section */
+  .section-title {
+    font-size: var(--text-3xl);
+  }
+  
+  .section-header {
+    margin-bottom: var(--space-8);
+  }
+  
+  /* Profile Section */
+  .profile-image div {
+    height: 350px !important;
+    font-size: 6rem !important;
+  }
+  
+  .profile-highlights {
+    grid-template-columns: 1fr;
+  }
+  
+  /* Pricing */
+  .pricing-card.featured {
+    transform: none;
+  }
+  
+  /* Footer */
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+    text-align: center;
+  }
+  
+  .footer-brand {
+    grid-column: unset;
+  }
+  
+  .footer-social {
+    justify-content: center;
+  }
+}
+
+/* =========================================
+   MOBILE (max-width: 480px)
+   ======================================== */
+
+@media (max-width: 480px) {
+  /* Typography */
+  h1 { font-size: var(--text-3xl); }
+  h2 { font-size: var(--text-2xl); }
+  h3 { font-size: var(--text-xl); }
+  
+  /* Hero */
+  .hero-content {
+    padding: var(--space-4);
+  }
+  
+  .hero-title {
+    font-size: var(--text-3xl);
+  }
+  
+  .hero-title-line {
+    white-space: normal;
+  }
+  
+  .hero-label {
+    font-size: var(--text-xs);
+  }
+  
+  .hero-subtitle {
+    font-size: var(--text-base);
+  }
+  
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .hero-buttons .btn {
+    width: 100%;
+  }
+  
+  /* V4: Topics / Stories section padding */
+  .topics-section {
+    padding-top: 24px;
+    padding-bottom: 40px;
+  }
+  
+  .stories-section {
+    padding-bottom: 40px;
+  }
+  
+  .profile-map-illustration {
+    max-width: 240px;
+  }
+  
+  .profile-map-inset {
+    width: 52px;
+    height: 52px;
+  }
+  
+  .profile-map-inset i,
+  .profile-map-inset svg {
+    width: 24px;
+    height: 24px;
+  }
+  
+  /* Buttons */
+  .btn-lg {
+    padding: var(--space-4) var(--space-6);
+    font-size: var(--text-base);
+  }
+  
+  /* Cards */
+  .card {
+    padding: var(--space-6);
+  }
+  
+  .feature-card {
+    padding: var(--space-6);
+  }
+  
+  .feature-card .icon {
+    width: 64px;
+    height: 64px;
+    font-size: var(--text-2xl);
+  }
+  
+  /* Trust Stats */
+  .trust-stat-number {
+    font-size: var(--text-3xl);
+    min-width: 60px;
+  }
+  
+  .trust-stat-label {
+    font-size: var(--text-xs);
+  }
+  
+  /* How It Works */
+  .how-it-works {
+    padding: var(--space-5);
+  }
+  
+  .how-it-works-title {
+    font-size: var(--text-xl);
+  }
+  
+  /* Value Props */
+  .value-prop-card {
+    flex-direction: column;
+    padding: var(--space-5);
+  }
+  
+  .value-prop-icon {
+    width: 44px;
+    height: 44px;
+  }
+  
+  .value-prop-icon svg,
+  .value-prop-icon i {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .value-prop-content h4 {
+    font-size: var(--text-base);
+  }
+  
+  .value-prop-content p {
+    font-size: var(--text-sm);
+  }
+  
+  .value-prop-quote {
+    font-size: var(--text-xs);
+  }
+  
+  .pricing-card {
+    padding: var(--space-6);
+  }
+  
+  /* Testimonials */
+  .testimonial-card::before {
+    font-size: 3rem;
+  }
+  
+  .testimonial-content {
+    font-size: var(--text-base);
+  }
+  
+  /* Profile */
+  .profile-image div {
+    height: 280px !important;
+    font-size: 5rem !important;
+  }
+  
+  .highlight-item {
+    padding: var(--space-3);
+  }
+  
+  .highlight-item .icon {
+    width: 36px;
+    height: 36px;
+  }
+  
+  /* CTA */
+  .cta-title {
+    font-size: var(--text-2xl);
+  }
+  
+  .cta-text {
+    font-size: var(--text-base);
+  }
+  
+  /* FAQ */
+  .faq-question {
+    font-size: var(--text-base);
+    padding: var(--space-4) 0;
+  }
+  
+  /* Footer */
+  .footer {
+    padding: var(--space-12) 0 var(--space-6);
+  }
+  
+  .footer-title {
+    margin-bottom: var(--space-4);
+  }
+}
+
+/* =========================================
+   HOVER STATES (devices with hover)
+   ======================================== */
+
+@media (hover: hover) {
+  .card:hover {
+    transform: translateY(-4px);
+  }
+  
+  .btn:hover {
+    transform: translateY(-2px);
+  }
+}
+
+/* =========================================
+   TOUCH DEVICES (no hover)
+   ======================================== */
+
+@media (hover: none) {
+  .card:hover {
+    transform: none;
+  }
+  
+  .btn:hover {
+    transform: none;
+  }
+}
+
+/* =========================================
+   PRINT STYLES
+   ======================================== */
+
+@media print {
+  .header,
+  .mobile-menu,
+  .hero-scroll,
+  .cta-section,
+  .footer-social,
+  .btn {
+    display: none !important;
+  }
+  
+  .section {
+    padding: 1rem 0;
+    break-inside: avoid;
+  }
+  
+  body {
+    background: white;
+    color: black;
+  }
+  
+  a {
+    text-decoration: underline;
+  }
+}
+
+/* =========================================
+   REDUCED MOTION
+   ======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  
+  .fade-in,
+  .slide-in-left,
+  .slide-in-right {
+    opacity: 1;
+    transform: none;
+  }
+  
+}
+
+/* =========================================
+   HIGH CONTRAST MODE
+   ======================================== */
+
+@media (prefers-contrast: high) {
+  :root {
+    --color-text-secondary: var(--color-charcoal);
+    --color-light-gray: var(--color-dark-gray);
+  }
+  
+  .card {
+    border: 2px solid var(--color-charcoal);
+  }
+  
+  .btn-outline {
+    border-width: 3px;
+  }
+}
+
+/* =========================================
+   DARK MODE PREPARATION
+   ======================================== */
+
+@media (prefers-color-scheme: dark) {
+  /* Dark mode colors can be implemented here if needed */
+  /* Currently keeping light mode for brand consistency */
+}

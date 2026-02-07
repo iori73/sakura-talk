@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sakura Talk - Your Personal Guide to Japan</title>
+  
+  <!-- Meta Tags -->
+  <meta name="description" content="Connect with Sammy for personalized 1-on-1 sessions about life in Japan. Hidden gems, honest tips, and authentic insights from a local perspective.">
+  <meta name="keywords" content="Japan, Tokyo, travel tips, hidden gems, 1-on-1 sessions, Japanese culture, living in Japan">
+  <meta name="author" content="Sammy - Sakura Talk">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Sakura Talk - Your Personal Guide to Japan">
+  <meta property="og:description" content="Hidden gems, tips, and honest thoughts about Japan. Online support for your Japan journey.">
+  <meta property="og:type" content="website">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌸</text></svg>">
+  
+  <!-- Google Fonts - Optimized for actual usage -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;600&family=Quicksand:wght@500;600&display=swap" rel="stylesheet">
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <!-- Skip to main content link for accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <!-- ====================================
+       HEADER
+       ==================================== -->
+  <header class="header" id="header">
+    <div class="header-inner">
+      <a href="#" class="logo">
+        <span class="logo-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c.5 0 1 .2 1.4.6l3 3c.4.4.6.9.6 1.4s-.2 1-.6 1.4l-3 3c-.4.4-.9.6-1.4.6s-1-.2-1.4-.6l-3-3c-.4-.4-.6-.9-.6-1.4s.2-1 .6-1.4l3-3c.4-.4.9-.6 1.4-.6z" fill="#F2B5C4"/><path d="M12 12c.5 0 1 .2 1.4.6l3 3c.4.4.6.9.6 1.4s-.2 1-.6 1.4l-3 3c-.4.4-.9.6-1.4.6s-1-.2-1.4-.6l-3-3c-.4-.4-.6-.9-.6-1.4s.2-1 .6-1.4l3-3c.4-.4.9-.6 1.4-.6z" fill="#E896AB"/><circle cx="12" cy="12" r="2" fill="#4A6741"/></svg></span>
+        <span>Sakura Talk</span>
+      </a>
+      
+      <nav class="nav" id="nav">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#topics" class="nav-link">Topics</a>
+        <a href="#cases" class="nav-link">Cases</a>
+        <a href="#sammy" class="nav-link">Meet Sammy</a>
+        <a href="#pricing" class="nav-link">Pricing</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+        <a href="https://docs.google.com/forms/d/1Hkz6BVshMOo4ZSrwLK7id8PsFhKM6NQdSuFQgFWgtoc/viewform" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Book Now</a>
+      </nav>
+      
+      <button class="menu-btn" id="menu-btn" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+  
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#about" class="nav-link">About</a>
+    <a href="#topics" class="nav-link">Topics</a>
+    <a href="#cases" class="nav-link">Cases</a>
+    <a href="#sammy" class="nav-link">Meet Sammy</a>
+    <a href="#pricing" class="nav-link">Pricing</a>
+    <a href="#faq" class="nav-link">FAQ</a>
+    <a href="https://docs.google.com/forms/d/1Hkz6BVshMOo4ZSrwLK7id8PsFhKM6NQdSuFQgFWgtoc/viewform" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Book a Session</a>
+  </div>
+  
+  <main id="main-content">
+    <!-- ====================================
+         SECTION 1: HERO
+         ==================================== -->
+    <section class="hero" id="hero">
+      <!-- Floating Polaroid Images -->
+      <div class="hero-image-container hero-image-left">
+        <div class="hero-polaroid">
+          <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=600" alt="Traditional Japanese temple gate">
+          <span class="hero-polaroid-caption">Kyoto, Japan</span>
+        </div>
+      </div>
+      
+      <div class="hero-image-container hero-image-right">
+        <div class="hero-polaroid">
+          <img src="https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=600" alt="Cherry blossoms in Japan">
+          <span class="hero-polaroid-caption">Sakura Season</span>
+        </div>
+      </div>
+      
+      <div class="hero-content fade-in">
+        <span class="hero-label"><i data-lucide="map-pin" style="width: 16px; height: 16px; display: inline; vertical-align: middle; margin-right: 6px;"></i>Your Japan Journey Starts Here</span>
+        <h1 class="hero-title">
+          <span class="hero-title-line">Hidden Gems, Honest Tips,</span>
+          <span class="highlight">Real Japan</span>
+        </h1>
+        <p class="hero-subtitle">
+          Connect with Sammy for personalized 1-on-1 sessions about life in Japan.
+          Get authentic insights, local recommendations, and honest advice from someone who's living the Tokyo dream.
+        </p>
+        <div class="hero-buttons">
+          <a href="https://docs.google.com/forms/d/1Hkz6BVshMOo4ZSrwLK7id8PsFhKM6NQdSuFQgFWgtoc/viewform" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">Book a Session</a>
+          <a href="#about" class="btn btn-outline btn-lg">Learn More</a>
+        </div>
+      </div>
+    </section>
+    
+    <!-- ====================================
+         SECTION 2: ABOUT / WHAT IS SAKURA TALK
+         ==================================== -->
+    <section class="section bg-cream-warm" id="about" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-label">About Sakura Talk</span>
+          <h2 class="section-title" id="about-heading">What is Sakura Talk?</h2>
+          <div class="section-divider"></div>
+          <p class="section-subtitle">
+            Your direct line to real Japan — not from a guidebook, but from someone actually living it.
+          </p>
+        </div>
+        
+        <!-- Trust Stats -->
+        <div class="trust-stats fade-in">
+          <div class="trust-stat">
+            <span class="trust-stat-number">5+</span>
+            <span class="trust-stat-label">Years Living<br>Multicultural Life</span>
+          </div>
+          <div class="trust-stat">
+            <span class="trust-stat-number">3</span>
+            <span class="trust-stat-label">Countries<br>Lived & Worked</span>
+          </div>
+          <div class="trust-stat">
+            <span class="trust-stat-number">13K+</span>
+            <span class="trust-stat-label">People Following<br>My Japan Journey</span>
+          </div>
+        </div>
+        
+        <!-- How It Works -->
+        <div class="how-it-works fade-in">
+          <h3 class="how-it-works-title">How It Works</h3>
+          <div class="how-it-works-steps">
+            <div class="how-it-works-step">
+              <div class="step-number">1</div>
+              <div class="step-icon"><i data-lucide="calendar-check"></i></div>
+              <h4>Book</h4>
+              <p>Choose a time that works for you through the booking form</p>
+            </div>
+            <div class="how-it-works-step">
+              <div class="step-number">2</div>
+              <div class="step-icon"><i data-lucide="message-square"></i></div>
+              <h4>Share</h4>
+              <p>Tell me what you want to know — travel, work, life, anything Japan</p>
+            </div>
+            <div class="how-it-works-step">
+              <div class="step-number">3</div>
+              <div class="step-icon"><i data-lucide="video"></i></div>
+              <h4>Connect</h4>
+              <p>We meet on Google Meet for a real, honest conversation</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Value Props with Mini Testimonials -->
+        <div class="value-props fade-in">
+          <div class="value-prop-card">
+            <div class="value-prop-icon"><i data-lucide="map-pin"></i></div>
+            <div class="value-prop-content">
+              <h4>Beyond the Guidebook</h4>
+              <p>Local spots, timing tricks, and insights that only residents know.</p>
+              <span class="value-prop-quote">"Tips I never would have found online!" — Emily, USA</span>
+            </div>
+          </div>
+          <div class="value-prop-card">
+            <div class="value-prop-icon"><i data-lucide="message-circle-heart"></i></div>
+            <div class="value-prop-content">
+              <h4>Real Talk, No Filter</h4>
+              <p>The good, the hard, and the surprising. Honest answers to your real questions.</p>
+              <span class="value-prop-quote">"Finally, someone who tells it like it is!" — Marcus, Germany</span>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+    
+    <!-- ====================================
+         SECTION 3: TOPICS (V4: Added bottom padding)
+         ==================================== -->
+    <section class="section topics-section" id="topics">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-label">What We Can Discuss</span>
+          <h2 class="section-title">Topics for Our Chat</h2>
+          <div class="section-divider"></div>
+          <p class="section-subtitle">
+            Whatever's on your mind about Japan — from travel tips to working life, I'm here to help.
+          </p>
+        </div>
+        
+        <div class="grid grid-cols-2 gap-6">
+          <div class="topic-card card fade-in delay-1">
+            <h4><i data-lucide="plane" class="topic-icon"></i> Travel Planning</h4>
+            <p>Itinerary advice, hidden spots, best seasons to visit, transportation tips, and local recommendations.</p>
+          </div>
+          
+          <div class="topic-card card fade-in delay-2">
+            <h4><i data-lucide="briefcase" class="topic-icon"></i> Working in Japan</h4>
+            <p>Job hunting, workplace culture, visa requirements, career advice, and the reality of Tokyo work life.</p>
+          </div>
+          
+          <div class="topic-card card fade-in delay-3">
+            <h4><i data-lucide="home" class="topic-icon"></i> Living in Japan</h4>
+            <p>Finding apartments, daily life, social customs, making friends, and adapting to Japanese society.</p>
+          </div>
+          
+          <div class="topic-card card fade-in delay-4">
+            <h4><i data-lucide="sparkles" class="topic-icon"></i> Japanese Culture</h4>
+            <p>Traditions, modern culture, social norms, language tips, and understanding Japanese people.</p>
+          </div>
+          
+          <div class="topic-card card fade-in delay-5">
+            <h4><i data-lucide="utensils" class="topic-icon"></i> Food & Dining</h4>
+            <p>Restaurant recommendations, food culture, eating etiquette, and finding the best local eats.</p>
+          </div>
+          
+          <div class="topic-card card fade-in delay-1">
+            <h4><i data-lucide="luggage" class="topic-icon"></i> Solo Travel Tips</h4>
+            <p>Safety advice, solo-friendly destinations, meeting people, and making the most of traveling alone.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- ====================================
+         SECTION 3.5: USE CASES
+         Figma Design: node-id 282:2462
+         ==================================== -->
+    <section class="section bg-cream-warm cases-section" id="cases">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-label">Use Cases</span>
+          <h2 class="section-title">See How Sakura Talk Can Help You</h2>
+          <div class="section-divider"></div>
+          <p class="section-subtitle">
+            Real examples of how our conversations can support your Japan journey.
+          </p>
+        </div>
+      </div>
+      
+      <!-- Full-width Case Cards Container -->
+      <div class="cases-container">
+        <!-- Case 1: Travel Like a Local -->
+        <div class="case-card fade-in">
+          <div class="case-card-image">
+            <img src="https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=1200&q=80" alt="Hidden cafe in Japan">
+          </div>
+          <div class="case-card-content">
+            <span class="case-card-label">Case 1</span>
+            <h3 class="case-card-title">Explore Japan Like a Local</h3>
+            <p class="case-card-text">
+              Share the places you'd love to visit, and I'll guide you to hidden cafes, secret spots, and local discounts that tourists rarely find.
+            </p>
+            <p class="case-card-text">
+              I can even help you plan the perfect route to make the most of every moment in Japan.
+            </p>
+          </div>
+        </div>
+        
+        <!-- Case 2: Work in Japan -->
+        <div class="case-card reverse fade-in">
+          <div class="case-card-image">
+            <img src="https://images.unsplash.com/photo-1497215842964-222b430dc094?w=1200&q=80" alt="Modern office in Japan">
+          </div>
+          <div class="case-card-content">
+            <span class="case-card-label">Case 2</span>
+            <h3 class="case-card-title">Build Your Career in Japan</h3>
+            <p class="case-card-text">
+              Not sure how to find a job in Japan? I research and share practical information for those dreaming of working here.
+            </p>
+            <p class="case-card-text">
+              This includes insights from foreigners who've made the move and recommendations for job sites that actually work.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- ====================================
+         SECTION 4: MEET SAMMY
+         ==================================== -->
+    <section class="section bg-cream-warm" id="sammy">
+      <div class="container">
+        <div class="two-col">
+          <div class="profile-image slide-in-left">
+            <img src="https://storage.googleapis.com/studio-design-asset-files/projects/p6aoYNRNOR/s-1045x780_v-fs_webp_885b58a8-765a-48b9-850b-a80377e585b8.webp" alt="Sammy - Sakura Talk" style="width: 100%; height: 500px; object-fit: cover;">
+          </div>
+          
+          <div class="profile-content slide-in-right">
+            <span class="section-label">Meet Your Guide</span>
+            <h2>Hi, I'm Sammy!</h2>
+            <p class="lead">
+              Japanese, raised in Osaka for 20 years, now working in Tokyo. I've studied and interned in Sweden, worked full-time in Indonesia, and spent 5 years living with foreigners in shared houses.
+            </p>
+            <!-- V4: Map illustration - Illustration.svg (380×380) -->
+            <div class="profile-map-illustration">
+              <img src="assets/Illustration.svg" alt="" width="380" height="380" aria-hidden="true" class="profile-map-illustration-svg">
+            </div>
+            <p>
+              I've shared daily life with 500+ international residents in Japan. Working in marketing in a global environment, I understand both the Japanese perspective and the challenges foreigners face.
+            </p>
+            <p>
+              Through my Instagram (@sakura.talk), I share hidden gems, honest thoughts, and daily life in Japan with 13K+ followers. Now I want to connect with you personally through 1-on-1 sessions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- ====================================
+         SECTION 5: TESTIMONIALS (V4: Added bottom padding)
+         ==================================== -->
+    <section class="section stories-section" id="stories">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-label">What People Say</span>
+          <h2 class="section-title">Stories from Our Community</h2>
+          <div class="section-divider"></div>
+          <p class="section-subtitle">
+            Hear from people who've had sessions with me and what they found most helpful.
+          </p>
+        </div>
+        
+        <div class="grid grid-cols-3 gap-8">
+          <div class="testimonial-card card fade-in delay-1">
+            <p class="testimonial-content">
+              Sammy's session was exactly what I needed before my first solo trip to Japan. She gave me so many tips I never would have found online!
+            </p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">E</div>
+              <div class="testimonial-info">
+                <h4>Emily</h4>
+                <span>Solo Traveler, USA</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="testimonial-card card fade-in delay-2">
+            <p class="testimonial-content">
+              Finally, someone who tells it like it is! Her honest insights about working in Japan helped me make my decision to move here.
+            </p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">M</div>
+              <div class="testimonial-info">
+                <h4>Marcus</h4>
+                <span>Now lives in Tokyo</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="testimonial-card card fade-in delay-3">
+            <p class="testimonial-content">
+              The hidden gem recommendations were incredible. We visited places that weren't crowded with tourists and felt so authentic.
+            </p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">S</div>
+              <div class="testimonial-info">
+                <h4>Sophie & Tom</h4>
+                <span>Couple from UK</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- ====================================
+         SECTION 6: PRICING
+         ==================================== -->
+    <section class="section bg-cream-warm" id="pricing">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-label">Simple Pricing</span>
+          <h2 class="section-title">Choose Your Session</h2>
+          <div class="section-divider"></div>
+          <p class="section-subtitle">
+            Flexible options to fit your needs. Every session is tailored to your questions.
+          </p>
+        </div>
+        
+        <div class="grid grid-cols-3 gap-8">
+          <div class="pricing-card card featured fade-in delay-1">
+            <h3 class="pricing-name">Single Session</h3>
+            <div class="pricing-price">$73<span>/60 min</span></div>
+            <p class="pricing-description">One-on-one conversation about Japan</p>
+            <ul class="pricing-features">
+              <li><span class="check">✓</span> 60-minute video call</li>
+              <li><span class="check">✓</span> Any topics you want</li>
+              <li><span class="check">✓</span> Personalized recommendations</li>
+              <li><span class="check">✓</span> Google Meet session</li>
+            </ul>
+            <a href="https://docs.google.com/forms/d/1Hkz6BVshMOo4ZSrwLK7id8PsFhKM6NQdSuFQgFWgtoc/viewform" target="_blank" rel="noopener noreferrer" class="btn btn-primary w-full">Book Now</a>
+          </div>
+          
+          <div class="pricing-card card fade-in delay-2">
+            <h3 class="pricing-name">3 Session Pack</h3>
+            <div class="pricing-price">$200<span>/3 sessions</span></div>
+            <p class="pricing-description">Best value for deeper exploration</p>
+            <ul class="pricing-features">
+              <li><span class="check">✓</span> Three 60-minute sessions</li>
+              <li><span class="check">✓</span> Save $19 vs single sessions</li>
+              <li><span class="check">✓</span> Flexible scheduling</li>
+              <li><span class="check">✓</span> Ongoing support between sessions</li>
+            </ul>
+            <a href="https://docs.google.com/forms/d/1Hkz6BVshMOo4ZSrwLK7id8PsFhKM6NQdSuFQgFWgtoc/viewform" target="_blank" rel="noopener noreferrer" class="btn btn-outline w-full">Book Now</a>
+          </div>
+          
+          <div class="pricing-card card fade-in delay-3">
+            <h3 class="pricing-name">Monthly Support</h3>
+            <div class="pricing-price">$200<span>/3 months</span></div>
+            <p class="pricing-description">Long-term guidance & support</p>
+            <ul class="pricing-features">
+              <li><span class="check">✓</span> 3 months of support</li>
+              <li><span class="check">✓</span> Regular check-ins</li>
+              <li><span class="check">✓</span> Messaging access</li>
+              <li><span class="check">✓</span> Job search & visa guidance</li>
+              <li><span class="check">✓</span> Connection to HR experts</li>
+            </ul>
+            <a href="https://docs.google.com/forms/d/1Hkz6BVshMOo4ZSrwLK7id8PsFhKM6NQdSuFQgFWgtoc/viewform" target="_blank" rel="noopener noreferrer" class="btn btn-outline w-full">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- ====================================
+         SECTION 7: FAQ
+         ==================================== -->
+    <section class="section" id="faq">
+      <div class="container container-narrow">
+        <div class="section-header fade-in">
+          <span class="section-label">Questions</span>
+          <h2 class="section-title">Frequently Asked</h2>
+          <div class="section-divider"></div>
+        </div>
+        
+        <div class="faq-list fade-in">
+          <div class="faq-item">
+            <button class="faq-question">
+              How do the sessions work?
+              <span class="icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                After booking, you'll receive a confirmation email with a link to schedule your session. We'll meet via video call (Zoom or Google Meet) at your chosen time. Before the call, you can send me your questions or topics so I can prepare relevant information for you.
+              </div>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <button class="faq-question">
+              What topics can we discuss?
+              <span class="icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                Anything related to Japan! Travel planning, working here, daily life, culture, food, relationships, language learning, moving to Japan, and more. If it's about Japan, I'm happy to chat about it.
+              </div>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <button class="faq-question">
+              What languages do you speak?
+              <span class="icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                I'm fluent in English and Japanese, and can conduct sessions in either language. I also understand some basic phrases in other languages but English and Japanese are best for in-depth conversations.
+              </div>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <button class="faq-question">
+              Can I get a refund if I need to cancel?
+              <span class="icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                Yes! You can reschedule or get a full refund up to 24 hours before your session. If you need to cancel with less notice, we can work together to find a new time that works for both of us.
+              </div>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <button class="faq-question">
+              Do you offer group sessions?
+              <span class="icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                Currently, I focus on 1-on-1 sessions to give personalized attention. However, if you're traveling with a partner or friend, they're welcome to join your session at no extra cost!
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- ====================================
+         SECTION 8: CTA / BOOK NOW
+         ==================================== -->
+    <section class="section cta-section" id="book">
+      <div class="container">
+        <div class="cta-content fade-in">
+          <h2 class="cta-title">Ready to Start Your Japan Journey?</h2>
+          <p class="cta-text">
+            Let's chat about your questions, dreams, and plans for Japan. 
+            I can't wait to help you discover everything this amazing country has to offer.
+          </p>
+          <div class="hero-buttons">
+            <a href="https://www.instagram.com/sakura.talk" target="_blank" rel="noopener noreferrer" class="btn btn-white btn-lg">
+              Follow on Instagram
+            </a>
+            <a href="https://docs.google.com/forms/d/1Hkz6BVshMOo4ZSrwLK7id8PsFhKM6NQdSuFQgFWgtoc/viewform" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-lg">Book a Session</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <!-- ====================================
+       FOOTER
+       ==================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <span class="logo-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c.5 0 1 .2 1.4.6l3 3c.4.4.6.9.6 1.4s-.2 1-.6 1.4l-3 3c-.4.4-.9.6-1.4.6s-1-.2-1.4-.6l-3-3c-.4-.4-.6-.9-.6-1.4s.2-1 .6-1.4l3-3c.4-.4.9-.6 1.4-.6z" fill="#F2B5C4"/><path d="M12 12c.5 0 1 .2 1.4.6l3 3c.4.4.6.9.6 1.4s-.2 1-.6 1.4l-3 3c-.4.4-.9.6-1.4.6s-1-.2-1.4-.6l-3-3c-.4-.4-.6-.9-.6-1.4s.2-1 .6-1.4l3-3c.4-.4.9-.6 1.4-.6z" fill="#E896AB"/><circle cx="12" cy="12" r="2" fill="currentColor"/></svg></span>
+            <span>Sakura Talk</span>
+          </a>
+          <p>
+            Your personal guide to Japan. Hidden gems, honest tips, and real insights from someone living the Tokyo life.
+          </p>
+          <div class="footer-social" style="margin-top: var(--space-6);">
+            <a href="https://www.instagram.com/sakura.talk" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+            <a href="https://www.linkedin.com/in/hiroko-usami-83a3092ab" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+            <a href="mailto:sakura25.business@gmail.com" aria-label="Email"><i data-lucide="mail"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-column">
+          <h4 class="footer-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#topics">Topics</a></li>
+            <li><a href="#cases">Cases</a></li>
+            <li><a href="#sammy">Meet Sammy</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h4 class="footer-title">Support</h4>
+          <ul class="footer-links">
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h4 class="footer-title">Connect</h4>
+          <ul class="footer-links">
+            <li><a href="https://www.instagram.com/sakura.talk" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+            <li><a href="https://www.linkedin.com/in/hiroko-usami-83a3092ab" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="mailto:sakura25.business@gmail.com">Email</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 Sakura Talk. Made with <i data-lucide="heart" style="width: 14px; height: 14px; display: inline; vertical-align: middle; color: var(--color-sakura);"></i> in Tokyo.</p>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+  <script>
+    // Initialize Lucide icons
+    lucide.createIcons();
+  </script>
+</body>
+</html>
