@@ -225,6 +225,12 @@
     margin: var(--space-6) auto;
   }
   
+  .profile-map-illustration svg,
+  .profile-map-illustration img.profile-map-illustration-svg {
+    width: 280px;
+    height: 280px;
+  }
+  
   .profile-map-inset {
     width: 60px;
     height: 60px;
@@ -338,9 +344,12 @@
   }
   
   /* Profile Section */
-  .profile-image div {
-    height: 350px !important;
-    font-size: 6rem !important;
+  .profile-image {
+    height: auto;
+  }
+  
+  .profile-image img {
+    height: auto;
   }
   
   .profile-highlights {
@@ -420,6 +429,12 @@
   
   .profile-map-illustration {
     max-width: 240px;
+  }
+  
+  .profile-map-illustration svg,
+  .profile-map-illustration img.profile-map-illustration-svg {
+    width: 240px;
+    height: 240px;
   }
   
   .profile-map-inset {
@@ -516,9 +531,12 @@
   }
   
   /* Profile */
-  .profile-image div {
-    height: 280px !important;
-    font-size: 5rem !important;
+  .profile-image {
+    height: auto;
+  }
+  
+  .profile-image img {
+    height: auto;
   }
   
   .highlight-item {
